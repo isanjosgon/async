@@ -30,6 +30,7 @@ Ready in 1 minute. Just following the next steps:
 * add the framework to your project (drag and drop).
 * go to your target >> General tab
 * add the async.framework to your 'Embedded Binaries'
+* import the framework #import <async/async.h>
 * run and done!
 
 Final Xcode configuration
