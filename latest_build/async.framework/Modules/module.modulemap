@@ -1,0 +1,6 @@
+framework module async {
+  umbrella header "async.h"
+
+  export *
+  module * { export * }
+}

@@ -134,7 +134,7 @@
 				5B0C7D5E1BFE25C100BBFC7A /* Frameworks */,
 				5B0C7D5F1BFE25C100BBFC7A /* Headers */,
 				5B0C7D601BFE25C100BBFC7A /* Resources */,
-				5B0C7D8F1C035C1D00BBFC7A /* ShellScript */,
+				5B4944E61C1F099B004D2DBB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -174,7 +174,6 @@
 				TargetAttributes = {
 					5B0C7D611BFE25C100BBFC7A = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 5F5GHYAH36;
 					};
 					5B0C7D6B1BFE25C100BBFC7A = {
 						CreatedOnToolsVersion = 7.1;
@@ -218,7 +217,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B0C7D8F1C035C1D00BBFC7A /* ShellScript */ = {
+		5B4944E61C1F099B004D2DBB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,7 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/$PROJECT_DIR/ios-build-framework-script.sh";
+			shellScript = "/$PROJECT_DIR/ios-build-framework-script.sh ";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -354,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -362,6 +362,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = MIT.async;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -372,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -380,6 +382,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = MIT.async;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -425,6 +428,7 @@
 				5B0C7D781BFE25C100BBFC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B0C7D791BFE25C100BBFC7A /* Build configuration list for PBXNativeTarget "asyncTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +437,7 @@
 				5B0C7D7B1BFE25C100BBFC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

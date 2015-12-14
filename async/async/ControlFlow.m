@@ -29,7 +29,7 @@ static NSString *parametersAssert = @"First argument must be an array of methods
 
 + (NSDictionary *)toObject:(id)res atIndex:(NSInteger)iterator
 {
-    return @{@"operation":[NSString stringWithFormat:@"%ld",iterator + 1],@"result":res ? res : [NSNull null]};
+    return @{@"operation":[NSString stringWithFormat:@"%ld",(long)iterator + 1],@"result":res ? res : [NSNull null]};
 }
 
 + (void (^)(NSArray *,callbackBlock))parallel
